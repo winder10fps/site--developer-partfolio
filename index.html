@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Портфолио разработчика</title>
+    <link rel="icon" href="./assets/svg/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -12,31 +13,150 @@
 </head>
 
 <body>
-    <header class="header">
+    <div class="navbar">
         <div class="container">
-            <div class="header__inner">
-                <a class="header__logo" href="#">
+            <div class="navbar__inner">
+                <a class="navbar__logo" href="#">
                     <img src="./assets/svg/logo.svg" alt="лого">
                 </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link active" href="#">Главная</a>
+                <nav class="navbar__nav">
+                    <ul class="navbar__nav-list">
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link active" href="#">Главная</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Проекты</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="#">Проекты</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Обо мне</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="#">Обо мне</a>
                         </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Связаться</a>
+                        <li class="navbar__nav-item">
+                            <a class="navbar__nav-link" href="#">Связаться</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img class="header__memoji" src="./assets/images/sticker.png" alt="Артем Исламов">
+                <div class="header__text">
+                    <strong class="header__welcome-text">Привет 👋</strong>
+                    <h1 class="header__heading">
+                        <span class="primary-text">Я фронтенд-разработчик и веб-дизайнер</span><br>
+                        Меня зовут Артем Исламов и я делаю сайты для людей и компаний
+                    </h1>
+                    <div class="header__links">
+                        <ul class="header__socials">
+                            <li class="header__socials-item">
+                                <a class="header__socials-link" href="#">
+                                    <img src="./assets/svg/linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                            <li class="header__socials-item">
+                                <a class="header__socials-link" href="#">
+                                    <img src="./assets/svg/twitter.svg" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="header__socials-item">
+                                <a class="header__socials-link" href="#">
+                                    <img src="./assets/svg/github.svg" alt="github">
+                                </a>
+                            </li>
+                            <li class="header__socials-item">
+                                <a class="header__socials-link" href="#">
+                                    <img src="./assets/svg/stackoverflow.svg" alt="stackoverflow">
+                                </a>
+                            </li>
+                            <li class="header__socials-item">
+                                <a class="header__socials-link" href="#">
+                                    <img src="./assets/svg/youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="header__button button" href="#" download>
+                            <img src="./assets/svg/clip.svg" alt="🖇️" class="header__button-icon">
+                            <span class="header__button-text">Скачать резюме</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <main class="main">
+        <section class="projects">
+            <div class="container">
+                <div class="projects__inner">
+                    <h2 class="projects__heading">Последние проекты</h2>
+                    <div class="projects__cards">
+                        <div class="card">
+                            <img class="card__image" src="./assets/images/mobile.png" alt="Мобильное приложение">
+                            <div class="card__text">
+                                <h3 class="card__heading">Мобильное приложение</h3>
+                                <ul class="card__tags tags">
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">HTML</a>
+                                    </li>
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">CSS</a>
+                                    </li>
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">JavaScript</a>
+                                    </li>
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">Git</a>
+                                    </li>
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">Vitejs</a>
+                                    </li>
+                                </ul>
+                                <p class="card__description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="card__buttons">
+                                    <a class="card__button button" href="#">
+                                        <img class="card__button-icon" src="./assets/svg/code-brackets.svg" alt="&lt;&gt;">
+                                        <span class="card__button-text">Код</span>
+                                    </a>
+                                    <a class="card__button button" href="#">
+                                        <img class="card__button-icon" src="./assets/svg/check-mark.svg" alt="✔️">
+                                        <span class="card__button-text">Демо</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card__image" src="./assets/images/site.png" alt="Одностраничный промо-сайт">
+                            <div class="card__text">
+                                <h3 class="card__heading">Одностраничный промо-сайт</h3>
+                                <ul class="card__tags tags">
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">HTML</a>
+                                    </li>
+                                    <li class="card__tag">
+                                        <a class="card__tag-link tag-link" href="#">CSS</a>
+                                    </li>
+                                </ul>
+                                <p class="card__description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="card__buttons">
+                                    <a class="card__button button" href="#">
+                                        <img class="card__button-icon" src="./assets/svg/code-brackets.svg" alt="&lt;&gt;">
+                                        <span class="card__button-text">Код</span>
+                                    </a>
+                                    <a class="card__button button" href="#">
+                                        <img class="card__button-icon" src="./assets/svg/check-mark.svg" alt="✔️">
+                                        <span class="card__button-text">Демо</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
