@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer></script>
+    <script src="./js/telegram.js" defer></script>
 </head>
 
 <body>
@@ -229,15 +230,15 @@
                 <form action="#" class="feeadback__form">
                     <div class="feedback__input">
                         <label class="feedback__input-label" for="inputName">Имя</label>
-                        <input class="feedback__input-field" id="inputName" type="text">
+                        <input class="feedback__input-field" name="client_name" id="inputName" type="text">
                     </div>
                     <div class="feedback__input">
                         <label class="feedback__input-label" for="inputEmail">Email</label>
-                        <input class="feedback__input-field" id="inputEmail" type="email">
+                        <input class="feedback__input-field" name="client_email" id="inputEmail" type="email">
                     </div>
                     <div class="feedback__input">
                         <label class="feedback__input-label" for="inputMessage">Сообщение</label>
-                        <textarea class="feedback__input-field" id="inputMessage"></textarea>
+                        <textarea class="feedback__input-field" name="client_message" id="inputMessage"></textarea>
                     </div>
                     <button class="feedback__button button" type="submit">
                         <img src="./assets/svg/send.svg" alt="📨" class="feedback__button-icon">
